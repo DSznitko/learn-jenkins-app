@@ -4,7 +4,11 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+              sh '''
                 echo 'Hello World'
+                gep "Jenkins refresher" ./src/App.js
+              '''
+                
             }
         }
     }
