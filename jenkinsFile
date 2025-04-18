@@ -6,7 +6,7 @@ pipeline {
             steps {
               sh '''
                 echo 'Hello World'
-                gep "Jenkins refresher" ./src/App.js
+                grep "Jenkins refresher" ./src/App.js
               '''
                 
             }
