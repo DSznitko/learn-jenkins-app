@@ -30,7 +30,7 @@ pipeline {
             steps {
                 sh '''
                     echo "checking if file exist"
-                    -f public/index.html
+                    test -f public/index.html
                     echo "run all tests"
                     npm test
                 '''
